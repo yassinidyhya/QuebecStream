@@ -1,0 +1,84 @@
+/* ========================================
+   Status Popups (Success/Error)
+   example.com
+   ======================================== */
+
+.status-popup-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(8, 10, 16, 0.85);
+    backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: var(--space-4);
+    animation: fadeIn 0.3s ease-out forwards;
+}
+
+.status-popup {
+    background: var(--slate-dark);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5), 0 0 30px rgba(16, 185, 129, 0.2);
+    border-radius: var(--radius-2xl);
+    padding: var(--space-10);
+    max-width: 450px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    animation: scaleIn 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.status-popup-icon {
+    width: 80px;
+    height: 80px;
+    background: rgba(16, 185, 129, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto var(--space-6);
+    color: var(--success);
+}
+
+.status-popup-icon svg {
+    width: 40px;
+    height: 40px;
+}
+
+.status-popup h3 {
+    font-size: var(--text-2xl);
+    font-weight: var(--font-bold);
+    margin-bottom: var(--space-4);
+    color: var(--white);
+}
+
+.status-popup p {
+    color: var(--gray-400);
+    line-height: 1.6;
+    margin-bottom: var(--space-8);
+}
+
+.status-popup .btn {
+    width: 100%;
+}
+
+.status-popup-overlay.fade-out {
+    animation: fadeOut 0.3s ease-out forwards;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@media (max-width: 640px) {
+    .status-popup {
+        padding: var(--space-8) var(--space-6);
+    }
+}

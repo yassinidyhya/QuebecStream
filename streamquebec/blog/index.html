@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Blog IPTV Québec - Guides, Tutoriels & Conseils | VotreSite</title>
+    <meta name="title" content="Blog IPTV Québec - Guides, Tutoriels & Conseils">
+    <meta name="description"
+        content="Découvrez nos guides IPTV, tutoriels d'installation, comparatifs de boîtiers et conseils d'experts pour le streaming au Québec. Tout savoir sur l'IPTV!">
+    <meta name="keywords"
+        content="blog IPTV, guide IPTV Québec, tutoriel streaming, conseils IPTV, Fire Stick, boîtier IPTV, Smart TV">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="French">
+    <meta name="author" content="VotreSite">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://example.com/blog/">
+    <meta property="og:title" content="Blog IPTV Québec - Guides & Tutoriels">
+    <meta property="og:description" content="Guides IPTV, tutoriels et conseils d'experts pour le streaming au Québec.">
+    <meta property="og:image" content="https://example.com/assets/images/votresite-logo.svg">
+    <meta property="og:locale" content="fr_CA">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../assets/images/votresite-favico.svg">
+    <link rel="apple-touch-icon" href="../assets/images/votresite-favico.svg">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://example.com/blog/">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Manrope:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- AOS Animation Library -->
+<!-- Main Stylesheet -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/blog.css">
+
+    <style>
+        .blog-hero {
+            padding: 140px 0 var(--space-12);
+            text-align: center;
+            background: linear-gradient(180deg, rgba(139, 92, 246, 0.1) 0%, transparent 100%);
+        }
+
+        .blog-hero h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 800;
+            margin-bottom: var(--space-4);
+            background: linear-gradient(135deg, var(--white) 0%, var(--gray-300) 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .blog-hero p {
+            font-size: 1.125rem;
+            color: var(--gray-400);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: var(--space-6);
+            padding: var(--space-12) 0 var(--space-20);
+        }
+
+        .blog-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: block;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(139, 92, 246, 0.3);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .blog-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .blog-card-content {
+            padding: var(--space-6);
+        }
+
+        .blog-card-meta {
+            display: flex;
+            gap: var(--space-4);
+            margin-bottom: var(--space-3);
+            font-size: 0.875rem;
+            color: var(--gray-500);
+        }
+
+        .blog-card-meta span {
+            display: flex;
+            align-items: center;
+            gap: var(--space-1);
+        }
+
+        .blog-card-meta i {
+            width: 14px;
+            height: 14px;
+        }
+
+        .blog-card h2 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: var(--space-2);
+            line-height: 1.3;
+        }
+
+        .blog-card p {
+            color: var(--gray-400);
+            font-size: 0.9375rem;
+            line-height: 1.6;
+        }
+
+        .blog-card-tag {
+            display: inline-block;
+            background: rgba(139, 92, 246, 0.15);
+            color: var(--primary-400);
+            padding: var(--space-1) var(--space-3);
+            border-radius: var(--radius-full);
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-bottom: var(--space-3);
+        }
+
+        @media (max-width: 768px) {
+            .blog-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
+    <!-- ===== HEADER ===== -->
+    <header class="header" role="banner">
+        <div class="container">
+            <a href="../index.html" class="logo" aria-label="VotreSite - Accueil">
+                <img src="../assets/images/votresite-logo.svg" alt="VotreSite" class="logo-img">
+            </a>
+            <nav class="nav-desktop" role="navigation" aria-label="Navigation principale">
+                <ul class="nav-links">
+                    <li><a href="../index.html" class="nav-link">Accueil</a></li>
+                    <li><a href="../pricing.html" class="nav-link">Forfaits</a></li>
+                    <li><a href="../channels.html" class="nav-link">Chaînes</a></li>
+                    <li><a href="../revendeur.html" class="nav-link">Revendeur</a></li>
+                    <li><a href="./index.html" class="nav-link active">Blog</a></li>
+                    <li><a href="../contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="../pricing.html" class="btn btn-primary hidden-mobile">S'ABONNER</a>
+            <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-overlay" aria-hidden="true"></div>
+    <nav class="mobile-menu" role="navigation" aria-label="Navigation mobile">
+        <ul class="nav-links">
+            <li><a href="../index.html" class="nav-link">Accueil</a></li>
+            <li><a href="../pricing.html" class="nav-link">Forfaits</a></li>
+            <li><a href="../channels.html" class="nav-link">Chaînes</a></li>
+            <li><a href="../revendeur.html" class="nav-link">Revendeur</a></li>
+            <li><a href="./index.html" class="nav-link active">Blog</a></li>
+            <li><a href="../contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <a href="../pricing.html" class="btn btn-primary">S'ABONNER</a>
+    </nav>
+
+    <main id="main-content" role="main">
+        <!-- Blog Hero -->
+        <section class="blog-hero bg-dark">
+            <div class="container">
+                <h1>Blog IPTV Québec</h1>
+                <p>Guides, tutoriels et conseils d'experts pour profiter au
+                    maximum de votre expérience de streaming IPTV.</p>
+            </div>
+        </section>
+
+        <!-- Blog Grid -->
+        <section class="bg-dark">
+            <div class="container">
+                <div class="blog-grid">
+
+                    <!-- Article 1 -->
+                    <a href="./fire-stick-iptv.html" class="blog-card">
+                        <picture>
+                            <source srcset="images/fire-stick-hero.webp" type="image/webp">
+                            <img src="images/fire-stick-hero.png" alt="Fire Stick IPTV Guide" loading="lazy">
+                        </picture>
+                        <div class="blog-card-content">
+                            <span class="blog-card-tag">Guide</span>
+                            <div class="blog-card-meta">
+                                <span><i data-lucide="calendar"></i> 1 jan 2026</span>
+                                <span><i data-lucide="clock"></i> 8 min</span>
+                            </div>
+                            <h2>Fire Stick comment ça marche avec l'IPTV?</h2>
+                            <p>Guide complet pour transformer votre Fire TV Stick en centre de divertissement ultime
+                                avec l'IPTV.</p>
+                        </div>
+                    </a>
+
+                    <!-- Article 2 -->
+                    <a href="./quel-boitier-iptv-2026.html" class="blog-card">
+                        <picture>
+                            <source srcset="images/iptv-boxes-comparison.webp" type="image/webp">
+                            <img src="images/iptv-boxes-comparison.png" alt="Comparatif boîtiers IPTV" loading="lazy">
+                        </picture>
+                        <div class="blog-card-content">
+                            <span class="blog-card-tag">Comparatif</span>
+                            <div class="blog-card-meta">
+                                <span><i data-lucide="calendar"></i> 1 jan 2026</span>
+                                <span><i data-lucide="clock"></i> 10 min</span>
+                            </div>
+                            <h2>Quel boîtier IPTV acheter en 2026?</h2>
+                            <p>Comparatif des meilleurs boîtiers IPTV: Fire TV, Nvidia Shield, Apple TV et plus encore.
+                            </p>
+                        </div>
+                    </a>
+
+                    <!-- Article 3 -->
+                    <a href="./fire-tv-stick-chaines.html" class="blog-card">
+                        <picture>
+                            <source srcset="images/fire-tv-channels.webp" type="image/webp">
+                            <img src="images/fire-tv-channels.png" alt="Toutes les chaînes Fire TV" loading="lazy">
+                        </picture>
+                        <div class="blog-card-content">
+                            <span class="blog-card-tag">Guide</span>
+                            <div class="blog-card-meta">
+                                <span><i data-lucide="calendar"></i> 1 jan 2026</span>
+                                <span><i data-lucide="clock"></i> 7 min</span>
+                            </div>
+                            <h2>Comment avoir toutes les chaînes avec Fire TV Stick?</h2>
+                            <p>Accédez à plus de 25,000 chaînes sur votre Fire TV Stick avec notre guide complet.</p>
+                        </div>
+                    </a>
+
+                    <!-- Article 4 -->
+                    <a href="./installer-iptv-smart-tv.html" class="blog-card">
+                        <picture>
+                            <source srcset="images/smart-tv-iptv.webp" type="image/webp">
+                            <img src="images/smart-tv-iptv.png" alt="IPTV Smart TV" loading="lazy">
+                        </picture>
+                        <div class="blog-card-content">
+                            <span class="blog-card-tag">Tutoriel</span>
+                            <div class="blog-card-meta">
+                                <span><i data-lucide="calendar"></i> 1 jan 2026</span>
+                                <span><i data-lucide="clock"></i> 9 min</span>
+                            </div>
+                            <h2>Comment installer l'IPTV sur votre Smart TV?</h2>
+                            <p>Guide d'installation pour Samsung, LG et Sony Smart TV. Étapes simples et rapides.</p>
+                        </div>
+                    </a>
+
+                    <!-- Article 5 -->
+                    <a href="./meilleure-app-iptv-ios.html" class="blog-card">
+                        <picture>
+                            <source srcset="images/iptv-ios-apps.webp" type="image/webp">
+                            <img src="images/iptv-ios-apps.png" alt="Applications IPTV iOS" loading="lazy">
+                        </picture>
+                        <div class="blog-card-content">
+                            <span class="blog-card-tag">Comparatif</span>
+                            <div class="blog-card-meta">
+                                <span><i data-lucide="calendar"></i> 1 jan 2026</span>
+                                <span><i data-lucide="clock"></i> 8 min</span>
+                            </div>
+                            <h2>Meilleure application IPTV iOS en 2026</h2>
+                            <p>Top 5 des apps IPTV pour iPhone et iPad. Comparatif complet et guide d'installation.</p>
+                        </div>
+                    </a>
+
+                    <!-- Article 6 -->
+                    <a href="./forfait-internet-iptv-quebec.html" class="blog-card">
+                        <picture>
+                            <source srcset="images/quebec-internet.webp" type="image/webp">
+                            <img src="images/quebec-internet.png" alt="Internet IPTV Québec" loading="lazy">
+                        </picture>
+                        <div class="blog-card-content">
+                            <span class="blog-card-tag">Conseil</span>
+                            <div class="blog-card-meta">
+                                <span><i data-lucide="calendar"></i> 1 jan 2026</span>
+                                <span><i data-lucide="clock"></i> 7 min</span>
+                            </div>
+                            <h2>Quel forfait Internet pour l'IPTV au Québec?</h2>
+                            <p>Vitesse recommandée, fournisseurs et conseils pour un streaming sans buffering.</p>
+                        </div>
+                    </a>
+
+                    <!-- Article 7 -->
+                    <a href="./films-famille-iptv-2026.html" class="blog-card">
+                        <picture>
+                            <source srcset="images/films-famille.webp" type="image/webp">
+                            <img src="images/films-famille.png" alt="Films famille IPTV" loading="lazy">
+                        </picture>
+                        <div class="blog-card-content">
+                            <span class="blog-card-tag">Divertissement</span>
+                            <div class="blog-card-meta">
+                                <span><i data-lucide="calendar"></i> 1 jan 2026</span>
+                                <span><i data-lucide="clock"></i> 6 min</span>
+                            </div>
+                            <h2>5 meilleurs films famille sur IPTV en 2026</h2>
+                            <p>Notre sélection des meilleurs films pour toute la famille disponibles sur IPTV.</p>
+                        </div>
+                    </a>
+
+                    <!-- Article 8 -->
+                    <a href="./iptv-bloque-solutions.html" class="blog-card">
+                        <picture>
+                            <source srcset="../assets/images/blog-2.webp" type="image/webp">
+                            <img src="../assets/images/blog-2.png" alt="Dépannage IPTV" loading="lazy">
+                        </picture>
+                        <div class="blog-card-content">
+                            <span class="blog-card-tag">Dépannage</span>
+                            <div class="blog-card-meta">
+                                <span><i data-lucide="calendar"></i> 1 jan 2026</span>
+                                <span><i data-lucide="clock"></i> 8 min</span>
+                            </div>
+                            <h2>Pourquoi mon IPTV bloque? Solutions</h2>
+                            <p>Guide de dépannage complet pour résoudre les problèmes de buffering IPTV.</p>
+                        </div>
+                    </a>
+
+                    <!-- Article 9 -->
+                    <a href="./decodeur-iptv-chaines-gratuites.html" class="blog-card">
+                        <picture>
+                            <source srcset="../assets/images/blog-3.webp" type="image/webp">
+                            <img src="../assets/images/blog-3.png" alt="IPTV gratuit" loading="lazy">
+                        </picture>
+                        <div class="blog-card-content">
+                            <span class="blog-card-tag">Conseil</span>
+                            <div class="blog-card-meta">
+                                <span><i data-lucide="calendar"></i> 1 jan 2026</span>
+                                <span><i data-lucide="clock"></i> 7 min</span>
+                            </div>
+                            <h2>Décodeur IPTV chaînes gratuites - Vérité</h2>
+                            <p>Ce que vous devez savoir sur les boîtiers "tout inclus" et les risques associés.</p>
+                        </div>
+                    </a>
+
+                    <!-- Article 10 -->
+                    <a href="./forfait-tv-internet-pas-cher.html" class="blog-card">
+                        <picture>
+                            <source srcset="../assets/images/blog-4.webp" type="image/webp">
+                            <img src="../assets/images/blog-4.png" alt="Forfait TV Internet pas cher" loading="lazy">
+                        </picture>
+                        <div class="blog-card-content">
+                            <span class="blog-card-tag">Économies</span>
+                            <div class="blog-card-meta">
+                                <span><i data-lucide="calendar"></i> 1 jan 2026</span>
+                                <span><i data-lucide="clock"></i> 8 min</span>
+                            </div>
+                            <h2>Meilleur forfait TV + Internet pas cher au Québec</h2>
+                            <p>Comment économiser jusqu'à 70% sur votre facture TV+Internet avec l'IPTV.</p>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="bg-dark" style="padding: var(--space-16) 0;">
+            <div class="container" style="text-align: center;">
+                <div
+                    style="max-width: 600px; margin: 0 auto; padding: var(--space-8); background: rgba(139, 92, 246, 0.1); border-radius: var(--radius-2xl); border: 1px solid rgba(139, 92, 246, 0.2);">
+                    <h2
+                        style="font-size: 1.75rem; font-weight: 700; margin-bottom: var(--space-3); color: var(--white);">
+                        Prêt à essayer l'IPTV?</h2>
+                    <p style="color: var(--gray-400); margin-bottom: var(--space-6);">Profitez de 25,000+ chaînes en
+                        HD/4K avec support 24/7 et essai gratuit de 24h!</p>
+                    <a href="../pricing.html" class="btn btn-primary">Voir les forfaits</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="../index.html" class="logo">
+                        <img src="../assets/images/votresite-logo.svg" alt="VotreSite" class="logo-img">
+                    </a>
+                    <p>IPTV Premium pour le Québec. La meilleure qualité d'image et le plus grand choix de chaînes au
+                        meilleur prix.</p>
+                </div>
+
+                <div class="footer-nav">
+                    <h4 class="footer-title">Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="../index.html" class="footer-link">Accueil</a></li>
+                        <li><a href="../pricing.html" class="footer-link">Forfaits</a></li>
+                        <li><a href="../channels.html" class="footer-link">Chaînes</a></li>
+                        <li><a href="../revendeur.html" class="footer-link">Revendeur</a></li>
+                        <li><a href="./index.html" class="footer-link">Blog</a></li>
+                        <li><a href="../contact.html" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-legal">
+                    <h4 class="footer-title">Légal</h4>
+                    <ul class="footer-links">
+                        <li><a href="../conditions.html" class="footer-link">Conditions d'utilisation</a></li>
+                        <li><a href="../privacy.html" class="footer-link">Politique de confidentialité</a></li>
+                        <li><a href="../refund.html" class="footer-link">Politique de remboursement</a></li>
+                        <li><a href="../legal.html" class="footer-link">Mentions légales</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4 class="footer-title">Contact</h4>
+                    <div class="footer-contact-item">
+                        <i data-lucide="mail"></i>
+                        <span>contact@example.com</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i data-lucide="message-circle"></i>
+                        <span>+1 (000) 000-0000</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i data-lucide="clock"></i>
+                        <span>Support 24/7</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">© <span data-year>2026</span> VotreSite - Tous droits réservés</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+<script src="../assets/js/navigation.js"></script>
+    <script src="../assets/js/animations.js"></script>
+    <script src="../assets/js/forms.js"></script>
+    <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>

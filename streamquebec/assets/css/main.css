@@ -1,0 +1,20 @@
+/* ========================================
+   MAIN STYLESHEET
+   example.com
+   ======================================== */
+
+/* Import all CSS modules in order */
+@import url('reset.css');
+@import url('variables.css');
+@import url('global.css');
+@import url('layout.css');
+@import url('components.css');
+@import url('navigation.css');
+@import url('animations.css');
+@import url('utilities.css');
+@import url('sections.css');
+/* Contains the page specific styles */
+@import url('status.css');
+
+/* Must be last to override everything */
+@import url('responsive.css');

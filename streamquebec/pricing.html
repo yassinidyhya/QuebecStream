@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Forfaits IPTV | Prix et Abonnements - VotreSite</title>
+    <meta name="title" content="Forfaits IPTV | Prix et Abonnements - VotreSite">
+    <meta name="description"
+        content="Choisissez votre forfait IPTV VotreSite. À partir de 14.99$/mois. 25,000+ chaînes, VOD illimité, support 24/7. Garantie 7 jours.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Forfaits IPTV | Prix et Abonnements - VotreSite">
+    <meta property="og:description" content="Choisissez votre forfait IPTV VotreSite. À partir de 14.99$/mois.">
+    <meta property="og:url" content="https://example.com/pricing.html">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://example.com/pricing.html">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Manrope:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- AOS -->
+<!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/votresite-favico.svg">
+    <link rel="apple-touch-icon" href="assets/images/votresite-favico.svg">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "IPTV VotreSite",
+    "description": "Service IPTV avec 25,000+ chaînes HD/4K",
+    "offers": {
+      "@type": "AggregateOffer",
+      "lowPrice": "14.99",
+      "highPrice": "29.99",
+      "priceCurrency": "CAD",
+      "availability": "https://schema.org/InStock"
+    }
+  }
+  </script>
+</head>
+
+<body>
+    <!-- Skip Link -->
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
+    <!-- Header -->
+    <header class="header scrolled" role="banner">
+        <div class="container">
+            <a href="./index.html" class="logo" aria-label="VotreSite - Accueil">
+                <img src="assets/images/votresite-logo.svg" alt="VotreSite" class="logo-img">
+            </a>
+
+            <nav class="nav-desktop" role="navigation" aria-label="Navigation principale">
+                <ul class="nav-links">
+                    <li><a href="./index.html" class="nav-link">Accueil</a></li>
+                    <li><a href="./pricing.html" class="nav-link active">Forfaits</a></li>
+                    <li><a href="./channels.html" class="nav-link">Chaînes</a></li>
+                    <li><a href="./revendeur.html" class="nav-link">Revendeur</a></li>
+                    <li><a href="./blog/index.html" class="nav-link">Blog</a></li>
+                    <li><a href="./contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="./pricing.html" class="btn btn-primary hidden-mobile">S'ABONNER</a>
+
+            <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-overlay"></div>
+    <nav class="mobile-menu">
+        <ul class="nav-links">
+            <li><a href="./index.html" class="nav-link">Accueil</a></li>
+            <li><a href="./pricing.html" class="nav-link active">Forfaits</a></li>
+            <li><a href="./channels.html" class="nav-link">Chaînes</a></li>
+            <li><a href="./revendeur.html" class="nav-link">Revendeur</a></li>
+            <li><a href="./blog/index.html" class="nav-link">Blog</a></li>
+            <li><a href="./contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <a href="./pricing.html" class="btn btn-primary">S'ABONNER</a>
+    </nav>
+
+    <main id="main-content" role="main">
+
+        <!-- Hero Section -->
+        <section class="py-24 bg-dark" style="padding-top: 140px;">
+            <div class="container">
+                <div class="section-header text-center mb-16">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6">Choisissez Votre <span
+                            class="gradient-text">Forfait</span></h1>
+                    <p class="text-gray-300 max-w-2xl mx-auto mb-10 text-lg">Tous les forfaits incluent l'activation
+                        instantanée et le support 24/7</p>
+                </div>
+
+                <!-- Pricing Toggle -->
+                <div class="pricing-toggle-wrapper mb-16">
+                    <div class="pricing-toggle-container">
+                        <span class="toggle-label essentials-label active">ESSENTIEL</span>
+                        <button class="pricing-switch" id="pricing-switch" aria-label="Passer aux forfaits Premium">
+                            <span class="switch-dot"></span>
+                        </button>
+                        <span class="toggle-label premium-label">
+                            <i data-lucide="gem" class="w-4 h-4 mr-1"></i>
+                            PREMIUM
+                        </span>
+                    </div>
+                </div>
+
+                <!-- ESSENTIEL PLANS -->
+                <div id="essentiel-plans" class="pricing-plans-grid active mb-24">
+                    <!-- 1 Month Essentiel -->
+                    <div class="pricing-card essentiels-theme">
+                        <div class="card-header">
+                            <h3>1 Mois <span class="highlight-price">$14.99</span></h3>
+                        </div>
+                        <div class="discount-bar">PRIX ORIGINAL 29$ | 50% OFF</div>
+                        <div class="quality-img">
+                            <picture>
+                                <source srcset="assets/images/hd-fhd.webp" type="image/webp">
+                                <img src="assets/images/hd-fhd.png" alt="HD FHD Quality" loading="lazy">
+                            </picture>
+                        </div>
+                        <ul class="features-list">
+                            <li><i data-lucide="check-circle-2"></i> Activation instantanée !</li>
+                            <li><i data-lucide="check-circle-2"></i> +15,000 Chaînes</li>
+                            <li><i data-lucide="check-circle-2"></i> +50K Films et séries (VOD)</li>
+                            <li><i data-lucide="check-circle-2"></i> Netflix, Amazon Prime, Disney+ et Plus</li>
+                            <li><i data-lucide="check-circle-2"></i> NBA, NFL, NHL package ...</li>
+                            <li><i data-lucide="check-circle-2"></i> Catch-up and EPG</li>
+                            <li><i data-lucide="check-circle-2"></i> FHD, HD, Chaînes</li>
+                            <li><i data-lucide="check-circle-2"></i> Rapide et stable</li>
+                            <li><i data-lucide="check-circle-2"></i> Serveur toujours disponible</li>
+                            <li><i data-lucide="check-circle-2"></i> Anti-Freeze™ 9.8 Technology</li>
+                            <li><i data-lucide="check-circle-2"></i> Protection de la vie privée et VPN intégré</li>
+                            <li><i data-lucide="check-circle-2"></i> 24/7 Live Chat Support</li>
+                        </ul>
+                        <a href="./contact.html" class="btn btn-primary btn-block">Contactez-nous</a>
+                    </div>
+
+                    <!-- 3 Months Essentiel -->
+                    <div class="pricing-card essentiels-theme">
+                        <div class="card-header">
+                            <h3>3 Mois <span class="highlight-price">$24.99</span></h3>
+                        </div>
+                        <div class="discount-bar">PRIX ORIGINAL 49$ | 50% OFF</div>
+                        <div class="quality-img">
+                            <picture>
+                                <source srcset="assets/images/hd-fhd.webp" type="image/webp">
+                                <img src="assets/images/hd-fhd.png" alt="HD FHD Quality" loading="lazy">
+                            </picture>
+                        </div>
+                        <ul class="features-list">
+                            <li><i data-lucide="check-circle-2"></i> Activation instantanée !</li>
+                            <li><i data-lucide="check-circle-2"></i> +15,000 Chaînes</li>
+                            <li><i data-lucide="check-circle-2"></i> +50K Films et séries (VOD)</li>
+                            <li><i data-lucide="check-circle-2"></i> Netflix, Amazon Prime, Disney+ et Plus</li>
+                            <li><i data-lucide="check-circle-2"></i> NBA, NFL, NHL package ...</li>
+                            <li><i data-lucide="check-circle-2"></i> Catch-up and EPG</li>
+                            <li><i data-lucide="check-circle-2"></i> FHD, HD, Chaînes</li>
+                            <li><i data-lucide="check-circle-2"></i> Rapide et stable</li>
+                            <li><i data-lucide="check-circle-2"></i> Serveur toujours disponible</li>
+                            <li><i data-lucide="check-circle-2"></i> Anti-Freeze™ 9.8 Technology</li>
+                            <li><i data-lucide="check-circle-2"></i> Protection de la vie privée et VPN intégré</li>
+                            <li><i data-lucide="check-circle-2"></i> 24/7 Live Chat Support</li>
+                        </ul>
+                        <a href="./contact.html" class="btn btn-primary btn-block">Contactez-nous</a>
+                    </div>
+
+                    <!-- 6 Months Essentiel -->
+                    <div class="pricing-card essentiels-theme">
+                        <div class="card-header">
+                            <h3>6 Mois <span class="highlight-price">$44.99</span></h3>
+                        </div>
+                        <div class="discount-bar">PRIX ORIGINAL 89$ | 50% OFF</div>
+                        <div class="quality-img">
+                            <picture>
+                                <source srcset="assets/images/hd-fhd.webp" type="image/webp">
+                                <img src="assets/images/hd-fhd.png" alt="HD FHD Quality" loading="lazy">
+                            </picture>
+                        </div>
+                        <ul class="features-list">
+                            <li><i data-lucide="check-circle-2"></i> Activation instantanée !</li>
+                            <li><i data-lucide="check-circle-2"></i> +15,000 Chaînes</li>
+                            <li><i data-lucide="check-circle-2"></i> +50K Films et séries (VOD)</li>
+                            <li><i data-lucide="check-circle-2"></i> Netflix, Amazon Prime, Disney+ et Plus</li>
+                            <li><i data-lucide="check-circle-2"></i> NBA, NFL, NHL package ...</li>
+                            <li><i data-lucide="check-circle-2"></i> Catch-up and EPG</li>
+                            <li><i data-lucide="check-circle-2"></i> FHD, HD, Chaînes</li>
+                            <li><i data-lucide="check-circle-2"></i> Rapide et stable</li>
+                            <li><i data-lucide="check-circle-2"></i> Serveur toujours disponible</li>
+                            <li><i data-lucide="check-circle-2"></i> Anti-Freeze™ 9.8 Technology</li>
+                            <li><i data-lucide="check-circle-2"></i> Protection de la vie privée et VPN intégré</li>
+                            <li><i data-lucide="check-circle-2"></i> 24/7 Live Chat Support</li>
+                        </ul>
+                        <a href="./contact.html" class="btn btn-primary btn-block">Contactez-nous</a>
+                    </div>
+
+                    <!-- 12 Months Essentiel -->
+                    <div class="pricing-card essentiels-theme">
+                        <div class="card-header">
+                            <h3>12 Mois <span class="highlight-price">$59.99</span></h3>
+                        </div>
+                        <div class="discount-bar">PRIX ORIGINAL 100$ | 50% OFF</div>
+                        <div class="quality-img">
+                            <picture>
+                                <source srcset="assets/images/hd-fhd.webp" type="image/webp">
+                                <img src="assets/images/hd-fhd.png" alt="HD FHD Quality" loading="lazy">
+                            </picture>
+                        </div>
+                        <ul class="features-list">
+                            <li><i data-lucide="check-circle-2"></i> Activation instantanée !</li>
+                            <li><i data-lucide="check-circle-2"></i> +15,000 Chaînes</li>
+                            <li><i data-lucide="check-circle-2"></i> +50K Films et séries (VOD)</li>
+                            <li><i data-lucide="check-circle-2"></i> Netflix, Amazon Prime, Disney+ et Plus</li>
+                            <li><i data-lucide="check-circle-2"></i> NBA, NFL, NHL package ...</li>
+                            <li><i data-lucide="check-circle-2"></i> Catch-up and EPG</li>
+                            <li><i data-lucide="check-circle-2"></i> FHD, HD, Chaînes</li>
+                            <li><i data-lucide="check-circle-2"></i> Rapide et stable</li>
+                            <li><i data-lucide="check-circle-2"></i> Serveur toujours disponible</li>
+                            <li><i data-lucide="check-circle-2"></i> Anti-Freeze™ 9.8 Technology</li>
+                            <li><i data-lucide="check-circle-2"></i> Protection de la vie privée et VPN intégré</li>
+                            <li><i data-lucide="check-circle-2"></i> 24/7 Live Chat Support</li>
+                        </ul>
+                        <a href="./contact.html" class="btn btn-primary btn-block">Contactez-nous</a>
+                    </div>
+                </div>
+
+                <!-- PREMIUM PLANS -->
+                <div id="premium-plans" class="pricing-plans-grid mb-24">
+                    <!-- 1 Month Premium -->
+                    <div class="pricing-card premium-theme">
+                        <div class="card-header">
+                            <h3>1 Mois <span class="highlight-price">$24.99</span></h3>
+                        </div>
+                        <div class="discount-bar">PRIX ORIGINAL 49$ | 50% OFF</div>
+                        <div class="quality-img">
+                            <picture>
+                                <source srcset="assets/images/hd3-1.webp" type="image/webp">
+                                <img src="assets/images/hd3-1.png" alt="HD FHD 4K Quality" loading="lazy">
+                            </picture>
+                        </div>
+                        <p class="premium-intro">Regardez en 4K et bénéficiez du support multi-connexion jusqu'à 5
+                            appareils.</p>
+                        <ul class="features-list">
+                            <li><i data-lucide="check-circle-2"></i> Activation instantanée !</li>
+                            <li><i data-lucide="check-circle-2"></i> +25,000 Chaînes</li>
+                            <li><i data-lucide="check-circle-2"></i> +150K Films et séries (VOD)</li>
+                            <li><i data-lucide="check-circle-2"></i> Netflix, Amazon Prime, Disney+ et Plus</li>
+                            <li><i data-lucide="check-circle-2"></i> NBA, NFL, NHL package ...</li>
+                            <li><i data-lucide="check-circle-2"></i> Catch-up and EPG</li>
+                            <li><i data-lucide="check-circle-2"></i> 4K, FHD, HD, Chaînes</li>
+                            <li><i data-lucide="check-circle-2"></i> Rapide et stable</li>
+                            <li><i data-lucide="check-circle-2"></i> Serveur toujours disponible</li>
+                            <li><i data-lucide="check-circle-2"></i> Anti-Freeze™ 9.8 Technology</li>
+                            <li><i data-lucide="check-circle-2"></i> Protection de la vie privée et VPN intégré</li>
+                            <li><i data-lucide="check-circle-2"></i> 24/7 Live Chat Support</li>
+                        </ul>
+                        <a href="./contact.html" class="btn btn-accent btn-block">Contactez-nous</a>
+                    </div>
+
+                    <!-- 3 Months Premium -->
+                    <div class="pricing-card premium-theme">
+                        <div class="card-header">
+                            <h3>3 Mois <span class="highlight-price">$39.99</span></h3>
+                        </div>
+                        <div class="discount-bar">PRIX ORIGINAL 79$ | 50% OFF</div>
+                        <div class="quality-img">
+                            <picture>
+                                <source srcset="assets/images/hd3-1.webp" type="image/webp">
+                                <img src="assets/images/hd3-1.png" alt="HD FHD 4K Quality" loading="lazy">
+                            </picture>
+                        </div>
+                        <p class="premium-intro">Regardez en 4K et bénéficiez du support multi-connexion jusqu'à 5
+                            appareils.</p>
+                        <ul class="features-list">
+                            <li><i data-lucide="check-circle-2"></i> Activation instantanée !</li>
+                            <li><i data-lucide="check-circle-2"></i> +25,000 Chaînes</li>
+                            <li><i data-lucide="check-circle-2"></i> +150K Films et séries (VOD)</li>
+                            <li><i data-lucide="check-circle-2"></i> Netflix, Amazon Prime, Disney+ et Plus</li>
+                            <li><i data-lucide="check-circle-2"></i> NBA, NFL, NHL package ...</li>
+                            <li><i data-lucide="check-circle-2"></i> Catch-up and EPG</li>
+                            <li><i data-lucide="check-circle-2"></i> 4K, FHD, HD, Chaînes</li>
+                            <li><i data-lucide="check-circle-2"></i> Rapide et stable</li>
+                            <li><i data-lucide="check-circle-2"></i> Serveur toujours disponible</li>
+                            <li><i data-lucide="check-circle-2"></i> Anti-Freeze™ 9.8 Technology</li>
+                            <li><i data-lucide="check-circle-2"></i> Protection de la vie privée et VPN intégré</li>
+                            <li><i data-lucide="check-circle-2"></i> 24/7 Live Chat Support</li>
+                        </ul>
+                        <a href="./contact.html" class="btn btn-accent btn-block">Contactez-nous</a>
+                    </div>
+
+                    <!-- 6 Months Premium -->
+                    <div class="pricing-card premium-theme">
+                        <div class="card-header">
+                            <h3>6 Mois <span class="highlight-price">$59.99</span></h3>
+                        </div>
+                        <div class="discount-bar">PRIX ORIGINAL 110$ | 50% OFF</div>
+                        <div class="quality-img">
+                            <picture>
+                                <source srcset="assets/images/hd3-1.webp" type="image/webp">
+                                <img src="assets/images/hd3-1.png" alt="HD FHD 4K Quality" loading="lazy">
+                            </picture>
+                        </div>
+                        <p class="premium-intro">Regardez en 4K et bénéficiez du support multi-connexion jusqu'à 5
+                            appareils.</p>
+                        <ul class="features-list">
+                            <li><i data-lucide="check-circle-2"></i> Activation instantanée !</li>
+                            <li><i data-lucide="check-circle-2"></i> +25,000 Chaînes</li>
+                            <li><i data-lucide="check-circle-2"></i> +150K Films et séries (VOD)</li>
+                            <li><i data-lucide="check-circle-2"></i> Netflix, Amazon Prime, Disney+ et Plus</li>
+                            <li><i data-lucide="check-circle-2"></i> NBA, NFL, NHL package ...</li>
+                            <li><i data-lucide="check-circle-2"></i> Catch-up and EPG</li>
+                            <li><i data-lucide="check-circle-2"></i> 4K, FHD, HD, Chaînes</li>
+                            <li><i data-lucide="check-circle-2"></i> Rapide et stable</li>
+                            <li><i data-lucide="check-circle-2"></i> Serveur toujours disponible</li>
+                            <li><i data-lucide="check-circle-2"></i> Anti-Freeze™ 9.8 Technology</li>
+                            <li><i data-lucide="check-circle-2"></i> Protection de la vie privée et VPN intégré</li>
+                            <li><i data-lucide="check-circle-2"></i> 24/7 Live Chat Support</li>
+                        </ul>
+                        <a href="./contact.html" class="btn btn-accent btn-block">Contactez-nous</a>
+                    </div>
+
+                    <!-- 12 Months Premium -->
+                    <div class="pricing-card premium-theme">
+                        <div class="card-header">
+                            <h3>12 Mois <span class="highlight-price">$79.99</span></h3>
+                        </div>
+                        <div class="discount-bar">PRIX ORIGINAL 139$ | 50% OFF</div>
+                        <div class="quality-img">
+                            <picture>
+                                <source srcset="assets/images/hd3-1.webp" type="image/webp">
+                                <img src="assets/images/hd3-1.png" alt="HD FHD 4K Quality" loading="lazy">
+                            </picture>
+                        </div>
+                        <p class="premium-intro">Regardez en 4K et bénéficiez du support multi-connexion jusqu'à 5
+                            appareils.</p>
+                        <ul class="features-list">
+                            <li><i data-lucide="check-circle-2"></i> Activation instantanée !</li>
+                            <li><i data-lucide="check-circle-2"></i> +25,000 Chaînes</li>
+                            <li><i data-lucide="check-circle-2"></i> +150K Films et séries (VOD)</li>
+                            <li><i data-lucide="check-circle-2"></i> Netflix, Amazon Prime, Disney+ et Plus</li>
+                            <li><i data-lucide="check-circle-2"></i> NBA, NFL, NHL package ...</li>
+                            <li><i data-lucide="check-circle-2"></i> Catch-up and EPG</li>
+                            <li><i data-lucide="check-circle-2"></i> 4K, FHD, HD, Chaînes</li>
+                            <li><i data-lucide="check-circle-2"></i> Rapide et stable</li>
+                            <li><i data-lucide="check-circle-2"></i> Serveur toujours disponible</li>
+                            <li><i data-lucide="check-circle-2"></i> Anti-Freeze™ 9.8 Technology</li>
+                            <li><i data-lucide="check-circle-2"></i> Protection de la vie privée et VPN intégré</li>
+                            <li><i data-lucide="check-circle-2"></i> 24/7 Live Chat Support</li>
+                        </ul>
+                        <a href="./contact.html" class="btn btn-accent btn-block">Contactez-nous</a>
+                    </div>
+                </div>
+
+                <!-- Toggle Logic (Included directly here to avoid external dependency issues on this page) -->
+                <script>
+                    document.addEventListener('DOMContentLoaded', () => {
+                        const pricingSwitch = document.getElementById('pricing-switch');
+                        if (pricingSwitch) {
+                            const essentielPlans = document.getElementById('essentiel-plans');
+                            const premiumPlans = document.getElementById('premium-plans');
+                            const essentialsLabel = document.querySelector('.essentials-label');
+                            const premiumLabel = document.querySelector('.premium-label');
+
+                            pricingSwitch.addEventListener('click', () => {
+                                pricingSwitch.classList.toggle('active');
+                                essentielPlans.classList.toggle('active');
+                                premiumPlans.classList.toggle('active');
+                                essentialsLabel.classList.toggle('active');
+                                premiumLabel.classList.toggle('active');
+                            });
+                        }
+                    });
+                </script>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- Guarantee -->
+        <section class="py-16 bg-dark">
+            <div class="container">
+                <div class="card text-center max-w-2xl mx-auto"
+                    style="border: 2px solid var(--success);">
+                    <div class="text-success text-5xl mb-4">🛡️</div>
+                    <h3 class="text-2xl font-bold mb-4">Garantie 7 Jours Satisfait ou Remboursé</h3>
+                    <p class="text-gray-300">
+                        Essayez sans risque. Si vous n'êtes pas satisfait de notre service, nous vous remboursons
+                        intégralement dans les 7 premiers jours. Aucune question posée.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== FAQ SECTION ===== -->
+        <section class="py-16 bg-deep">
+            <div class="container">
+                <div class="section-header text-center mb-16">
+                    <h2>Questions sur nos <span class="gradient-text">Forfaits</span></h2>
+                    <p class="mb-10">Tout ce que vous devez savoir avant de choisir votre abonnement.</p>
+                </div>
+
+                <div class="faq-two-columns">
+                    <!-- Column 1 -->
+                    <div class="faq-column">
+                        <div class="accordion-item">
+                            <button class="accordion-header" aria-expanded="false">
+                                <span>Quelle est la différence entre Essentiel et Premium ?</span>
+                                <i data-lucide="chevron-down" class="accordion-icon"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Le forfait Essentiel offre +15,000 chaînes en FHD/HD avec 1 connexion. Le forfait
+                                    Premium inclut +25,000 chaînes en 4K/FHD, +150K VOD et jusqu'à 5 connexions
+                                    simultanées.</p>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <button class="accordion-header" aria-expanded="false">
+                                <span>Quels modes de paiement acceptez-vous ?</span>
+                                <i data-lucide="chevron-down" class="accordion-icon"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Nous acceptons Visa, MasterCard, PayPal, et les virements Interac. Toutes les
+                                    transactions sont sécurisées par SSL 256-bit.</p>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <button class="accordion-header" aria-expanded="false">
+                                <span>Puis-je changer de forfait après mon achat ?</span>
+                                <i data-lucide="chevron-down" class="accordion-icon"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Oui, vous pouvez passer d'Essentiel à Premium à tout moment. Contactez notre support
+                                    24/7 pour effectuer la mise à niveau.</p>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <button class="accordion-header" aria-expanded="false">
+                                <span>Comment fonctionne la garantie 7 jours ?</span>
+                                <i data-lucide="chevron-down" class="accordion-icon"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Si vous n'êtes pas satisfait dans les 7 premiers jours, contactez-nous pour un
+                                    remboursement complet. Aucune question posée.</p>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <button class="accordion-header" aria-expanded="false">
+                                <span>Mon abonnement se renouvelle-t-il automatiquement ?</span>
+                                <i data-lucide="chevron-down" class="accordion-icon"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Non, nos forfaits ne sont pas reconduits automatiquement. Vous gardez le contrôle
+                                    total et renouvelez à votre convenance.</p>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <button class="accordion-header" aria-expanded="false">
+                                <span>Quel forfait est recommandé pour une famille ?</span>
+                                <i data-lucide="chevron-down" class="accordion-icon"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Le forfait Premium est idéal pour les familles grâce à ses 5 connexions simultanées,
+                                    permettant à chacun de regarder sur son propre appareil.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Column 2 -->
+                    <div class="faq-column">
+                        <div class="accordion-item">
+                            <button class="accordion-header" aria-expanded="false">
+                                <span>L'activation est-elle instantanée ?</span>
+                                <i data-lucide="chevron-down" class="accordion-icon"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Oui ! Dès que votre paiement est confirmé, vous recevez vos identifiants par courriel
+                                    en quelques minutes et pouvez commencer à regarder immédiatement.</p>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <button class="accordion-header" aria-expanded="false">
+                                <span>Que comprend le VOD (Video On Demand) ?</span>
+                                <i data-lucide="chevron-down" class="accordion-icon"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Notre bibliothèque VOD inclut des milliers de films et séries, y compris les
+                                    dernières sorties Netflix, Amazon Prime, Disney+ et plus encore.</p>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <button class="accordion-header" aria-expanded="false">
+                                <span>Les prix affichés incluent-ils les taxes ?</span>
+                                <i data-lucide="chevron-down" class="accordion-icon"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Oui, tous les prix affichés sont finaux. Il n'y a pas de frais cachés ou de taxes
+                                    supplémentaires à payer.</p>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <button class="accordion-header" aria-expanded="false">
+                                <span>Offrez-vous des réductions sur les abonnements longs ?</span>
+                                <i data-lucide="chevron-down" class="accordion-icon"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Absolument ! Plus la durée est longue, plus vous économisez. L'abonnement 12 mois
+                                    offre jusqu'à 50% de réduction par rapport au prix mensuel.</p>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <button class="accordion-header" aria-expanded="false">
+                                <span>Que se passe-t-il si j'ai des problèmes techniques ?</span>
+                                <i data-lucide="chevron-down" class="accordion-icon"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Notre équipe de support est disponible 24/7 via chat en direct. Nous résolvons la
+                                    plupart des problèmes en quelques minutes.</p>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <button class="accordion-header" aria-expanded="false">
+                                <span>Puis-je tester le service avant de m'engager ?</span>
+                                <i data-lucide="chevron-down" class="accordion-icon"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Notre garantie 7 jours vous permet d'essayer le service sans risque. Si vous n'êtes
+                                    pas satisfait, nous vous remboursons intégralement.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-12">
+                    <a href="./contact.html" class="btn btn-secondary">Contactez-nous</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="./index.html" class="logo">
+                        <img src="assets/images/votresite-logo.svg" alt="VotreSite" class="logo-img">
+                    </a>
+                    <p>IPTV Premium pour le Québec. La meilleure qualité d'image et le plus grand choix de chaînes au
+                        meilleur prix.</p>
+                </div>
+
+                <div class="footer-nav">
+                    <h4 class="footer-title">Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="./index.html" class="footer-link">Accueil</a></li>
+                        <li><a href="./pricing.html" class="footer-link">Forfaits</a></li>
+                        <li><a href="./channels.html" class="footer-link">Chaînes</a></li>
+                        <li><a href="./revendeur.html" class="footer-link">Revendeur</a></li>
+                        <li><a href="./blog/index.html" class="footer-link">Blog</a></li>
+                        <li><a href="./contact.html" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-legal">
+                    <h4 class="footer-title">Légal</h4>
+                    <ul class="footer-links">
+                        <li><a href="./conditions.html" class="footer-link">Conditions d'utilisation</a></li>
+                        <li><a href="./privacy.html" class="footer-link">Politique de confidentialité</a></li>
+                        <li><a href="./refund.html" class="footer-link">Politique de remboursement</a></li>
+                        <li><a href="./legal.html" class="footer-link">Mentions légales</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4 class="footer-title">Contact</h4>
+                    <div class="footer-contact-item">
+                        <i data-lucide="mail"></i>
+                        <span>contact@example.com</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i data-lucide="message-circle"></i>
+                        <span>+1 (000) 000-0000</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i data-lucide="clock"></i>
+                        <span>Support 24/7</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">© <span data-year>2026</span> VotreSite - Tous droits réservés</p>
+            </div>
+        </div>
+    </footer>
+            
+
+  
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+<script src="assets/js/navigation.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

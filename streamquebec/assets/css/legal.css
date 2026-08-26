@@ -1,0 +1,132 @@
+/* Legal Pages Common Styles */
+
+.legal-page {
+    padding: 160px 0 80px;
+    background: var(--midnight-black);
+}
+
+.legal-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: var(--radius-2xl);
+    padding: 60px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.legal-card h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.legal-tabs-hub {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.legal-tab-link {
+    padding: 12px 24px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    color: var(--gray-400);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.legal-tab-link:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--white);
+}
+
+.legal-tab-link.active {
+    background: var(--crimson-primary);
+    color: var(--white);
+    border-color: var(--crimson-primary);
+}
+
+.legal-section {
+    margin-bottom: 40px;
+}
+
+.legal-section h2 {
+    font-size: 1.5rem;
+    color: var(--white);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.legal-section h2 i {
+    color: var(--crimson-primary);
+}
+
+.legal-section p,
+.legal-section li {
+    color: var(--gray-400);
+    line-height: 1.8;
+    font-size: 1.05rem;
+    margin-bottom: 15px;
+}
+
+/* Custom list styling used in conditions.html */
+.legal-section ul {
+    padding-left: 20px;
+    list-style: none;
+}
+
+.legal-section li {
+    position: relative;
+    padding-left: 25px;
+}
+
+.legal-section li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 12px;
+    width: 6px;
+    height: 6px;
+    background: var(--crimson-primary);
+    border-radius: 50%;
+}
+
+/* Highlight box used in refund.html */
+.highlight-box {
+    background: rgba(220, 38, 38, 0.05);
+    border: 1px solid rgba(220, 38, 38, 0.2);
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 40px;
+}
+
+.highlight-box strong {
+    color: var(--crimson-primary);
+    font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    .legal-card {
+        padding: 30px;
+    }
+
+    .legal-card h1 {
+        font-size: 2.2rem;
+    }
+
+    .legal-tabs-hub {
+        gap: 10px;
+    }
+
+    .legal-tab-link {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}

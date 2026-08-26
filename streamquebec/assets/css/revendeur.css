@@ -1,0 +1,206 @@
+/* Reseller Page Styles */
+
+/* Hero Reseller */
+.reseller-intro {
+    padding: 140px 0 80px;
+    background: var(--midnight-black);
+}
+
+.intro-image-wrapper {
+    border-radius: var(--radius-2xl);
+    overflow: hidden;
+    box-shadow: var(--shadow-2xl);
+}
+
+.intro-image-wrapper img {
+    width: 100%;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.intro-image-wrapper img:hover {
+    transform: scale(1.02);
+}
+
+/* How it works steps */
+.steps-section {
+    padding: 80px 0;
+    background: var(--midnight-black);
+    text-align: center;
+}
+
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.step-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    height: 100%;
+}
+
+.step-icon {
+    width: 80px;
+    height: 80px;
+    background: var(--gradient-card);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    border: 1px solid rgba(220, 38, 38, 0.2);
+    box-shadow: var(--shadow-glow-sm);
+}
+
+/* Credit Map */
+.credit-map-section {
+    padding: 100px 0;
+    background: #080a10;
+}
+
+.credit-map-container {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 80px;
+    align-items: start;
+}
+
+.credit-map-section h2 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 30px;
+    font-family: var(--font-display);
+}
+
+.credit-explanation-list {
+    list-style: none;
+    padding: 0;
+}
+
+.credit-explanation-list li {
+    font-size: 1.1rem;
+    color: var(--gray-300);
+    margin-bottom: 24px;
+    line-height: 1.7;
+    display: flex;
+    gap: 15px;
+}
+
+.credit-explanation-list li.sub-item {
+    padding-left: 35px;
+    margin-bottom: 12px;
+}
+
+.credit-explanation-list li i {
+    color: var(--crimson-primary);
+    font-size: 1.4rem;
+    flex-shrink: 0;
+    margin-top: 3px;
+}
+
+.credit-btns {
+    display: grid;
+    gap: 15px;
+}
+
+.credit-btn {
+    background: var(--gold-premium);
+    color: black;
+    padding: 16px;
+    text-align: center;
+    font-weight: 800;
+    border-radius: 6px;
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+}
+
+/* Why Resell Section */
+.general-features {
+    padding: 100px 0;
+    background: #080a10;
+}
+
+.general-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.gen-feat-item {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 40px 30px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.gen-feat-icon {
+    width: 60px;
+    height: 60px;
+    background: rgba(220, 38, 38, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+    color: var(--crimson-primary);
+}
+
+.gen-feat-item h3 {
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: white;
+    font-family: var(--font-display);
+}
+
+.gen-feat-item p {
+    color: var(--gray-400);
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.exclusive-banner {
+    margin-top: 80px;
+    padding: 60px;
+    background: linear-gradient(135deg, rgba(220, 38, 38, 0.1) 0%, rgba(8, 10, 16, 1) 100%);
+    border: 1px solid rgba(220, 38, 38, 0.2);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.exclusive-banner h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: white;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 1024px) {
+    .intro-grid {
+        display: none;
+        /* Intro grid was replaced by simple centered layout */
+    }
+}
+
+@media (max-width: 768px) {
+    .steps-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .credit-map-container {
+        grid-template-columns: 1fr;
+    }
+
+    .general-grid {
+        grid-template-columns: 1fr;
+    }
+}
